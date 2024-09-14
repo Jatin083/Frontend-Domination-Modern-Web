@@ -12,7 +12,7 @@ Welcome to my GitHub repository where I showcase my front-end development projec
     
    - 1st Page - https://css-p1-shop-jacket.vercel.app/
    - 2nd Page - https://css-grid-frontend-domination.vercel.app/
-   - 3rd Page - 
+   - 3rd Page - https://css-p3-minor-project.vercel.app/
 
 ---
 
