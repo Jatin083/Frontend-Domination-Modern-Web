@@ -3,8 +3,9 @@
 Welcome to my GitHub repository where I showcase my front-end development projects! Below you'll find live links to various projects I've created, highlighting my skills in HTML, CSS, JavaScript, React, and more.
 
 ---
-#Modern Animation
+# Modern Animation
 - website - https://lenis-image-scroll-animation.vercel.app/
+  
 ## Projects
 
 ### 1. Landing Pages
