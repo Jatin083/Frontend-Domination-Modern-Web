@@ -10,13 +10,13 @@ Welcome to my GitHub repository where I showcase my front-end development projec
 
 ### 1. Landing Pages
 
- (i) **Description:** Landing Pages using html, css and js
+ a. **Description:** Landing Pages using html, css and js
     
    - 1st Page - https://css-p1-shop-jacket.vercel.app/
    - 2nd Page - https://css-grid-frontend-domination.vercel.app/
    - 3rd Page - https://css-p3-minor-project.vercel.app/
 
-(ii) **Description:** Landing Pages using html, css and js using GSAP
+ b. **Description:** Landing Pages using html, css and js using GSAP
    
    - 1st Page - https://fransisco-landing-page-gsap.vercel.app/
 
