@@ -16,6 +16,18 @@ Welcome to my GitHub repository where I showcase my front-end development projec
    - 2nd Page - https://css-grid-frontend-domination.vercel.app/
    - 3rd Page - https://css-p3-minor-project.vercel.app/
 
+**Description:** Landing Pages using html, css and js
+   
+   - 1st Page - https://fransisco-landing-page-gsap.vercel.app/
+
+     
+### 1. GSAP EXAMPLE
+
+  **Description:** Landing Pages using html, css, js and GSAP and ScrollTrigger 
+    
+   - Vertical Scroll Animation - https://scroll-trigger-vertical-scroll-or-simple.vercel.app/
+   - Horizontal Scroll Animation - https://scroll-trigger-horizontal-scroll.vercel.app/
+
 ---
 
 ## About Me
