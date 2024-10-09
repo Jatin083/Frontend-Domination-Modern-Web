@@ -16,7 +16,7 @@ Welcome to my GitHub repository where I showcase my front-end development projec
    - 2nd Page - https://css-grid-frontend-domination.vercel.app/
    - 3rd Page - https://css-p3-minor-project.vercel.app/
 
-(ii)**Description:** Landing Pages using html, css and js using GSAP
+(ii) **Description:** Landing Pages using html, css and js using GSAP
    
    - 1st Page - https://fransisco-landing-page-gsap.vercel.app/
 
