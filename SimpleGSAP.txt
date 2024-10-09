@@ -1,0 +1,21 @@
+⭐ Simple Animation ⭐
+
+Example:-
+
+ ✨ Initial se final ki or: ✨
+ gsap.to("#box", {
+     x: 1000,
+     rotate: 360,
+     duration: 2,
+     delay: 2,
+     backgroundColor: "pink",
+ });
+
+ ✨ Final se initial ki or: ✨
+ gsap.from("#box", {
+     x: 1000,
+     rotate: 360,
+     duration: 2,
+     delay: 2,
+     backgroundColor: "pink",
+ });
