@@ -21,7 +21,7 @@ Welcome to my GitHub repository where I showcase my front-end development projec
    - 1st Page - https://fransisco-landing-page-gsap.vercel.app/
 
      
-### 1. GSAP EXAMPLE
+### 1. GSAP showcase
 
  - **Description:** Landing Pages using html, css, js and GSAP and ScrollTrigger 
     
