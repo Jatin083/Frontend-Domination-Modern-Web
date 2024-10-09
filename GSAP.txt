@@ -1,0 +1,16 @@
+/* 🌟 GSAP (GreenSock Animation Platform) ek animation library hai JavaScript ki 🌟 */
+
+// Key Properties:
+// - x: 1000             // X-axis par jao ya aao
+// - y: 500              // Y-axis par jao ya aao
+// - rotate: 360         // Rotate hotey hue jao ya aao
+// - duration: 1         // Animation kitni der chalegi 1 matlab 1s
+// - delay: 2            // Kitni der baad shuru hoga
+// - stagger: 1          // ye chijo ko ek ek second ke interval me dal dega or bari bari chalenge
+// - opacity: 0          // 0 kr do ya 0 se aao
+// - scrollTrigger:{}    // start or end control krna animation ki
+
+
+
+
+
