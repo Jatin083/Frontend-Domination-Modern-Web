@@ -1,0 +1,36 @@
+⭐ scrollTrigger ⭐  
+
+- scrollTrigger:{}    // start or end control krna animation ki
+- {
+    trigger:"#page2 #circle" // kisko trigger krna hai 
+    scroller:"body",         // scroller body par hi lagega jada tar
+    markers:true,            // points dekhne ke liye start and end
+    start:"top 0",         // start
+    end:"top -100%",           //
+    scrub:true,              // isse animation start se end ki trhf jayega or reverse on scroll
+    pin:true,                // hamesha jisko pin krna hai uski parent ko pin kro 
+}
+
+Example:-
+
+gsap.from("#page1 #circle",{
+    scale:0,
+    delay:1,
+    duration:2,
+    rotate:720
+})
+
+gsap.from("#page2 #circle",{
+    scale:0,
+    delay:1,
+    duration:2,
+    rotate:720,
+ ✨scrollTrigger:{
+        trigger:"#page2 #circle",
+        scroller:"body",
+        markers:true,
+        start:"top 60%",
+        end:"top 30%",
+        scrub:true,//or one se 5 
+    }✨
+})
