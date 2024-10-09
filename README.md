@@ -23,7 +23,7 @@ Welcome to my GitHub repository where I showcase my front-end development projec
      
 ### 1. GSAP EXAMPLE
 
-  **Description:** Landing Pages using html, css, js and GSAP and ScrollTrigger 
+ - **Description:** Landing Pages using html, css, js and GSAP and ScrollTrigger 
     
    - Vertical Scroll Animation - https://scroll-trigger-vertical-scroll-or-simple.vercel.app/
    - Horizontal Scroll Animation - https://scroll-trigger-horizontal-scroll.vercel.app/
