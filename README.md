@@ -4,6 +4,7 @@ Welcome to my GitHub repository where I showcase my front-end development projec
 
 ---
 # Modern Animation
+
 - website - https://lenis-image-scroll-animation.vercel.app/
   
 ## Projects
@@ -31,6 +32,7 @@ Welcome to my GitHub repository where I showcase my front-end development projec
 ### 3. Locomotivejs
 
  - **Description:** Landing Pages using html, css, js,  GSAP, ScrollTrigger and Locomotivejs
+   
     - Locomotive Elements Scroll - https://locomotive-elements-scroll.vercel.app/
 ---
 
