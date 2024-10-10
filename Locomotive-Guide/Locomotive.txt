@@ -1,0 +1,103 @@
+Locomotive 
+Used for smooth scrolling
+
+github link:- https://github.com/locomotivemtl/locomotive-scroll
+
+rules:-
+ - ek main div bnao usme sari chije dalo 
+ - main div me page1 hai jisme humko main ki height nhi deni hai page1 ko hi 100vh kr do or locomotive me warraper div ko height nhi dete
+
+step:-
+ - then js me ye likho
+
+     const scroll = new LocomotiveScroll({
+        el: document.querySelector('#main'),
+        smooth: true
+     });
+ - Scroll smooth ho gya jakr dekh 
+
+elements scroll speed:-
+ - locomotive ka use krke elements ki scroll speed change kr saktey hai
+ - github pe jao inke
+ - vha niche data h kii sarey vha se chije copy paste kro bus 
+
+example agar mai ek page2 div me img use kr ra hu to 
+     <img data-scroll data-scroll-speed="1.5" src="https://images.unsplash.com/photo-1727129333061-64db3070262e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> 
+
+ - Yha mne data-scroll use kia hai jo data-scroll-speed ko help krega 
+ - iska output me website me img thodi teji se scroll hota hua dikhegri
+
+
+⭐⭐cdn ka format:-
+Locomotive
+gsap
+scrollTrigger
+script tag
+
+ - Locomotive ek trh se hijack kr leta hai sab kuch or sari chijje mai control karunga scroll krne pe
+ - Locomotive scrollTrigger codepen likho google par first site pe jao or js ustha lo  then
+ - 3 color valey code hata do locomotive ka code sabse upar dalo smooth scroll vala 
+ - uske baad codepen wala without 3 color then you gsap or scrollTrigger
+ - ⭐⭐ yaad rahe vha pe scroller ko change krke "#main" ko dal do body ki jgh
+
+Example:- 
+
+
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+
+const locoScroll = new LocomotiveScroll({
+    el: document.querySelector("#main"),
+    smooth: true
+});
+// each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+locoScroll.on("scroll", ScrollTrigger.update);
+
+// tell ScrollTrigger to use these proxy methods for the "#main" element since Locomotive Scroll is hijacking things
+ScrollTrigger.scrollerProxy("#main", {
+    scrollTop(value) {
+        return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+    }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+    getBoundingClientRect() {
+    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+},
+// LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
+});
+
+
+
+// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+ScrollTrigger.refresh();
+
+//GSAP Code or your JS  
+gsap.from("#page1 #box",{
+    scale:0,
+    duration:1,
+    delay:1,
+    rotate:360,
+    opacity:0,
+})
+gsap.from("#page2 #box",{
+    scale:0,
+    duration:1,
+    rotate:360,
+    scrollTrigger:{
+        trigger:"#page2 #box",
+        scroller:"#main",
+        start:"top 50%",
+        markers:true,
+        scrub:true
+    }
+})
+
