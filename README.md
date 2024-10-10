@@ -21,13 +21,16 @@ Welcome to my GitHub repository where I showcase my front-end development projec
    - 1st Page - https://fransisco-landing-page-gsap.vercel.app/
 
      
-### 1. GSAP Showcase
+### 2. GSAP Showcase
 
- - **Description:** Landing Pages using html, css, js and GSAP and ScrollTrigger 
+ - **Description:** Landing Pages using html, css, js, GSAP and ScrollTrigger 
     
    - Vertical Scroll Animation - https://scroll-trigger-vertical-scroll-or-simple.vercel.app/
    - Horizontal Scroll Animation - https://scroll-trigger-horizontal-scroll.vercel.app/
+   - 
+### 3. Locomotivejs
 
+ - **Description:** Landing Pages using html, css, js,  GSAP, ScrollTrigger and Locomotivejs 
 ---
 
 ## About Me
