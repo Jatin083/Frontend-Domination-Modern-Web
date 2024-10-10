@@ -28,7 +28,7 @@ Welcome to my GitHub repository where I showcase my front-end development projec
     
    - Vertical Scroll Animation - https://scroll-trigger-vertical-scroll-or-simple.vercel.app/
    - Horizontal Scroll Animation - https://scroll-trigger-horizontal-scroll.vercel.app/
-   - 
+     
 ### 3. Locomotivejs
 
  - **Description:** Landing Pages using html, css, js,  GSAP, ScrollTrigger and Locomotivejs
