@@ -5,11 +5,11 @@ Welcome to my GitHub repository where I showcase my front-end development projec
 ---
 # Modern Websites
 
-- website - https://obys-agency-liard.vercel.app/
+- Obys Agency website  - https://obys-agency-liard.vercel.app/
   
 # Modern Animation
 
-- website - https://lenis-image-scroll-animation.vercel.app/
+- Lenis Animation website - https://lenis-image-scroll-animation.vercel.app/
   
 ## Projects
 
