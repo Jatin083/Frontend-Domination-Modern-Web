@@ -1,0 +1,33 @@
+1st program
+
+const scene = new THREE.Scene();                   
+const camera = new THREE.PerspectiveCamera(
+  75,                                             //fov(feild of view) - hum kitna dur dekh saktey or kya kya dekh saktey hai and ye jitna kam hoga too ek point ko dekhenge jada hoga fov to jada ko dekh payenge
+  window.innerWidth / window.innerHeight,         //aspect ratio  - camera kitni width or height ko dekhe
+  0.1,                                            //near - kitney pass ki chije dikhaye
+  1000                                            //far - kitni dur tak chije dekh saktey ho
+);
+
+const geometry = new THREE.BoxGeometry(1, 1, 1);   //isme three js se boxgeometry ko lekr aayega the x , y , x ki vali dali hai usme  or ye dacha h sarir ka 
+const material = new THREE.MeshBasicMaterial({     
+  color: 'hotpink',                                //cube ka color
+  wireframe:true,                                  //cube line se bna hua hai
+});                                                
+
+const cube = new THREE.Mesh(geometry, material);    //ye ek trh se sarir ke dache ko khal pehna di
+scene.add(cube);                                    //   
+camera.position.z = 5;                              //camera ki position me z-axis me piche aa jao 
+
+const canvas = document.querySelector("canvas")                //canvas tag hai
+const renderer = new THREE.WebGLRenderer({ canvas : canvas }); //ek renderer ek camera hai jo photo leta rahega
+renderer.setSize(window.innerWidth, window.innerHeight);       //width or screen ke hisab se image aayegi
+
+
+function animate() {
+  window.requestAnimationFrame(animate)                               //ek bar animate() ko chalunga too bar bar chalata rahega 
+  renderer.render(scene, camera);                              //render karega bar bar photo lega
+  cube.rotation.x += 0.01;                                     //cube x pe rotate hoga 
+  cube.rotation.y += 0.01;                                     //cube y pe rotate karega
+}
+renderer.setAnimationLoop(animate);                            
+
