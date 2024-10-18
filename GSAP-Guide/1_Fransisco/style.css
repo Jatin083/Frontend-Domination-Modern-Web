@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    color: white;
+    box-sizing:border-box;
+}
+html, body{
+    height: 100%;
+    width:100%;
+    background-color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    overflow: hidden;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7vh;
+    padding: 0 20px;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+#nav h3{
+    font-size: 25px;
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+#main h1{
+    font-size: 11vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 20vh;
+    margin-left: 10%;
+    position: relative;
+    z-index: 999;
+    width: 80%;
+}
+#main h1:nth-child(2){
+    margin-top: 23vh;
+}
+#main h1:nth-child(3){
+    text-align: center;
+}
+#main h1:nth-child(4){
+    text-align: center;
+}
+img{
+    height: 50vh;
+    background-color: pink;
+    position: absolute;
+    top: 17vh;
+    left: 40vw;
+}
+#img1{
+    rotate: 20deg;
+}
+
+#img2{
+    rotate: 10deg;
+}
+#icon{
+    display: none;
+}
+@media (max-width: 600px) {
+    #main{
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    body{
+        overflow: hidden;
+    }
+
+    #nav #nav-part2 h3 {
+        display: none; /* Hide the h3 elements */
+    }
+    #icon {
+        display: inline; /* Show the icon */
+    }
+    #main h1{
+        font-size: 14vw;
+        line-height: 10vh;
+        position: relative;
+        width: 90%;
+    }
+    #main h1:nth-child(2){
+        margin-top: 180px;
+    }
+    img{
+        height: 30vh;
+        background-color: pink;
+        position: absolute;
+        top: 17vh;
+        left: 30vw;
+    }
+}
